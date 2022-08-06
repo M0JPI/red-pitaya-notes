@@ -33,7 +33,7 @@ VIVADO = vivado -nolog -nojournal -mode batch
 XSCT = xsct
 RM = rm -rf
 
-UBOOT_TAG = 2021.04
+UBOOT_TAG = 2022.07
 LINUX_TAG = 5.10
 DTREE_TAG = xilinx-v2020.2
 
@@ -88,7 +88,7 @@ $(RTL8192_TAR):
 $(UBOOT_DIR): $(UBOOT_TAR)
 	mkdir -p $@
 	tar -jxf $< --strip-components=1 --directory=$@
-	patch -d tmp -p 0 < patches/u-boot-$(UBOOT_TAG).patch
+#	patch -d tmp -p 0 < patches/u-boot-$(UBOOT_TAG).patch
 	cp patches/zynq_red_pitaya_defconfig $@/configs
 	cp patches/zynq-red-pitaya.dts $@/arch/arm/dts
 
