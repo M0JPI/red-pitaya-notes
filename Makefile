@@ -88,7 +88,7 @@ $(RTL8192_TAR):
 $(UBOOT_DIR): $(UBOOT_TAR)
 	mkdir -p $@
 	tar -jxf $< --strip-components=1 --directory=$@
-#	patch -d tmp -p 0 < patches/u-boot-$(UBOOT_TAG).patch
+	patch -d tmp -p 0 < patches/u-boot-$(UBOOT_TAG).patch
 	cp patches/zynq_red_pitaya_defconfig $@/configs
 	cp patches/zynq-red-pitaya.dts $@/arch/arm/dts
 
