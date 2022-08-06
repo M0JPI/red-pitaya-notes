@@ -1,11 +1,13 @@
-diff -rupN old/u-boot-2021.04/arch/arm/dts/Makefile u-boot-2021.04/arch/arm/dts/Makefile
---- old/u-boot-2022.07/arch/arm/dts/Makefile
-+++ u-boot-2022.07/arch/arm/dts/Makefile
-@@ -286,7 +286,8 @@ dtb-$(CONFIG_ARCH_ZYNQ) += \
+diff -ruN tmp/u-boot-2022.07/arch/arm/dts/Makefile tmp/old/u-boot-2022.07/arch/arm/dts/Makefile
+--- tmp/u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 23:00:53.074667079 +0100
++++ tmp/old/u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 22:56:48.790671209 +0100
+@@ -323,8 +323,7 @@
  	zynq-zturn.dtb \
  	zynq-zturn-v5.dtb \
  	zynq-zybo.dtb \
-+	zynq-red-pitaya.dtb
+-	zynq-zybo-z7.dtb \
+-	zynq-red-pitaya.dtb
++	zynq-zybo-z7.dtb
  dtb-$(CONFIG_ARCH_ZYNQMP) += \
  	avnet-ultra96-rev1.dtb			\
  	avnet-ultrazedev-cc-v1.0-ultrazedev-som-v1.0.dtb	\
