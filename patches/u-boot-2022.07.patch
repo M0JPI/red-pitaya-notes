@@ -1,6 +1,6 @@
-diff -ruN tmp/u-boot-2022.07/arch/arm/dts/Makefile tmp/old/u-boot-2022.07/arch/arm/dts/Makefile
---- tmp/u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 23:00:53.074667079 +0100
-+++ tmp/old/u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 22:56:48.790671209 +0100
+diff -ruN u-boot-2022.07/arch/arm/dts/Makefile old/u-boot-2022.07/arch/arm/dts/Makefile
+--- u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 23:00:53.074667079 +0100
++++ old/u-boot-2022.07/arch/arm/dts/Makefile	2022-08-06 22:56:48.790671209 +0100
 @@ -323,8 +323,7 @@
  	zynq-zturn.dtb \
  	zynq-zturn-v5.dtb \
